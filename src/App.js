@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from './index';
 
-const App = () => (
-  <div>
-    App  
-  </div>
-)
+const App = () => {
+  const value = useContext(UserContext);
+  return (
+    <div>
+      {value}
+    </div>
+  )
+}
 
 export default App;
